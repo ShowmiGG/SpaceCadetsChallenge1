@@ -34,7 +34,7 @@ public class Solution {
         String inputLine;
         //check every line in the file for the name until the line is null
         while ((inputLine = dataIn.readLine()) != null)
-        	//filter out lines that include the name of the person's name
+        	//filter out lines that include the name of the person's name using given conditions
         	if (inputLine.contains("name") && inputLine.contains("/people/" + emailID)) {
         		//returns the name of the person from the fixed position in each line
         		System.out.println(inputLine.substring(61, (inputLine.indexOf("<", 61))));
